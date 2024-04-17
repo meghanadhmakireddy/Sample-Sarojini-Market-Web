@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign up</title>
+<style>
+/*input{
+color:blue;
+border-radius:4px;
+border:2px solid rgb(93, 185, 213);
+}*/
+table,th,td{
+   border-collapse: collapse;
+}
+#button{
+color:red;
+border-radius: 25px;
+font-style: oblique;
+}
+#h2{
+   color:brown;
+
+}
+#button:hover{
+background-color: burlywood;
+}
+body{
+   /* background-color: whitesmoke;
+   opacity: .7; */
+   background: url('Sarojini/SarojiniBack.jpeg');
+
+}
+fieldset{
+   width: 100%;
+   margin-top: 0;
+}
+
+#login{
+   border: transparent;
+   cursor: pointer;
+   font-style: oblique;
+   font-weight: bold;
+   text-decoration: underline;
+}
+::placeholder{
+   color: red;
+   /* background-color: antiquewhite; */
+}
+input[type="text"]{
+   border: 2px solid black;
+   border-radius: 6px;
+   /* color: red; */
+}
+input[type="password"]{
+   border: 2px solid black;
+   border-radius: 6px;
+   /* color: red; */
+}
+input[type="email"]{
+   border: 2px solid black;
+   border-radius: 6px;
+   /* color: red; */
+}
+</style>
+</head>
+<body>
+<fieldset style="background-color: white; opacity: 0.7; border: transparent;">
+<form id="myForm" action="http://localhost:2011/submit-form" method="POST" autocomplete="off" onsubmit="return validateForm()">
+<h2 id="h2"><center>To create an account</center></h2>
+<table cellspacing="10" cellpadding="10" align="center">
+<tr><td>
+   <label for="username">Name: </label></td><td>
+   <input type="text" id="username" name="username" placeholder="Enter Your Username">
+   <span id="usernameError" style="color: red;"></span>
+</td></tr>
+<tr><td>
+   <label for="password">Password: </label></td><td>
+   <input type="password" id="password" name="password" placeholder="Enter Your Password">
+   <span id="passwordError" style="color: red;"></span>
+</td></tr>
+<tr><td>
+   <label for="confirmPassword">Confirm Password: </label></td><td>
+   <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+   <span id="confirmPasswordError" style="color: red;"></span>
+</td></tr>
+<tr><td>
+   <label for="email">Email: </label></td><td>
+   <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
+   <span id="emailError" style="color: red;"></span>
+</td></tr>
+<tr><td>
+   <label for="mobile">Mobile No. : </label></td><td>
+   <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile Number">
+   <span id="mobileError" style="color: red;"></span>
+</td></tr>
+<tr><td colspan="2"><input type="submit" id="button" value="Create"></td></tr>
+<tr id="tr"><td>
+   already having an account ?
+   <button id="login" onclick="window.location.href='login.html'" type="button">log.in</button>
+   </td>
+</td></tr>
+</table>
+</form>
+</fieldset>
+
+<script>
+function validateForm() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+    var email = document.getElementById('email').value;
+    var mobile = document.getElementById('mobile').value;
+
+    var isValid = true;
+
+    // Validation checks
+    if (username.trim() === '') {
+        document.getElementById('usernameError').textContent = "Username should not be empty";
+        isValid = false;
+    } else {
+        document.getElementById('usernameError').textContent = "";
+    }
+
+
+    return isValid;
+}
+</script>
+</body>
+</html>
