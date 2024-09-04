@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarojini Market</title>
+    <!-- <script src="https://kit.fontawesome.com/f928c52a29.js" crossorigin="anonymous"></script> -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="sarojini.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#home" style=" border-radius: 20px;" onclick="change(event, this)">Home</a></li>
+            <li class="item"><a href="#Sarojini-Luxi" onclick="change(event, this)">Sarojini-Luxi</a></li>
+            <li class="item"><a href="#Sarojini-Basic" onclick="change(event, this)">Sarojini-Basic</a></li>
+            <li class="item"><a href="#Access" onclick="change(event, this)">Accessories</a></li>
+            <li class="item"><a href="#Help" onclick="change(event, this)">Help</a></li>
+        </ul>
+    </nav>
+    <input id="search" type="text" placeholder="Search...">
+    <button id="btn2">GO</button>
+    <button id="su" type="button" onclick="window.location.href='ProForm.html';">Sign up</button>
+    <button id="li" type="button" onclick="window.location.href='login.html';">Log in</button>
+
+    <section id="home">
+        <marquee behavior="slide" direction="up">
+            <h1 id="h2">Get the best cheapest clothes</h1>
+            <h2 class="blink">Sarojini - Market</h2>
+        </marquee>
+        <button id="btn" onclick="window.location.href = 'https://www.shopatsarojini.com/'">Today's Offers</button>
+    </section>
+
+    <h2 id="h3">Watch out our latest collection</h2>
+    <section id="Sarojini-Luxi">
+        <img src="men/Screenshot (105).png" id="md" height="300px" width="25%" style="margin-top: 27%;">
+        <img src="lady/Screenshot (106).png" id="ld" height="300px" width="25%" style="margin-top: 27%;">
+        <img src="Kids/Screenshot (107).png" id="kd" height="300px" width="20%" style="margin-top: 27%;">
+        <img src="winter/Screenshot (108).png" id="wd" height="300px" width="20%" style="margin-top: 27%;">
+    </section>
+
+    <h2 id="h2">Special Deals...</h2>
+    
+    <section id="Sarojini-Basic" style="background-color: darkcyan;">
+        <main id="sliders">
+            <img src="men/menFACE.jpeg" alt="" class="slider">
+            <img src="lady/ladyFACE.jpeg" alt="" class="slider">
+            <img src="Kids/kids5.jpeg" alt="" class="slider">
+            <img src="Kids/kid6.jpeg" alt="" class="slider">
+        </main>
+    </section>
+
+    <div id="wrap">
+        <img src="Thumbnails/Left_arrow.png"  class="Previous" onclick="Previous()"> </button>
+        <img src="Thumbnails/Right_arrow.png" class="Next" onclick="Next()"></button>
+    </div>
+    
+    <div id="thumb" style="background-color:grey; height: 100%; border-top: 10px; border-radius: 20px;">
+        <h2 id="h2">Also available...</h2>
+        <section id="Access">
+        <img src="Thumbnails/elep.png" id="pick">
+        <section id="thm">
+            <img src="Thumbnails/handbag.jpeg" alt="">
+            <img src="Thumbnails/belt.jpeg" alt="">
+            <img src="Thumbnails/access.jpeg" alt="">
+            <img src="Thumbnails/shoes.jpeg" alt="">
+            <img src="Thumbnails/Sunglasses.png" alt="">
+            <img src="Thumbnails/homeArt.png" alt="">
+            <img src="Thumbnails/caps.png" alt="">
+        </section>
+    </section>
+    </div>
+    
+    <h2 id="above"> Our Contact Information </h2>
+
+    <section id="Help" style="background-color: darkred;">
+        <div id="footer">
+            <h2 id="mv" style="height: 100px;">Address & HelpLine</h2>
+            <p>Sarojini Nagar , New Street <br>
+            18-7/45 , New Delhi</p>
+            <br>
+            <p>email : sales@megweb.com <br>
+            email : sales@vamweb.com <br><br>
+            +91-8374874647 <br>
+            +91-7036631406</p>
+        </div>
+        <div id="ql">
+            <h2>Quick Links</h2>
+            <ul>
+                <li>Home</li>
+                <li>Help</li>
+                <li>Sarojini-Luxi</li>
+                <li>Sarojini-Basic</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="lt">
+            <p>Copyright &copy; | 2024, All rights reserved</p>
+        </div>
+        <img id="pc" src="Thumbnails/Screenshot__112_-removebg-preview.png" width="220px" height="160px">
+    </section>
+
+    <script src="sarojini.js"></script>
+</body>
+</html>

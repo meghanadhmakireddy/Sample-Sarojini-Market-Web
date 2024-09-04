@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+    <title>Document</title>
     <style>
         body{
             background: url('Thumbnails/BackSarojini.png');
@@ -58,15 +58,12 @@
     </style>
 </head>
 <body>
-    <form id="myForm" action="http://localhost:2011/submit-form" method="POST" autocomplete="off" onsubmit="return check()">
-    <!-- <form action="#" autocomplete="off" onsubmit="return check()"> -->
+    <form action="#" autocomplete="off" onsubmit="return check()">
         <!-- <nav id="tit">Log in to your account</nav> -->
         <h2 id="tit">Log in to your account</h2>
         <section id="enter">
-            Name : <input type="text" id="un" name="username" placeholder="email or phone number"> <br><br>
-            Password : <input type="password" id="pw" name="password" placeholder="password"> <br><br>
-            <!-- Email : <input type="email" id="email" name="email" placeholder="Enter your email"> <br><br> -->
-            <!-- Mobile : <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number"> <br><br> -->
+            Name : <input type="text" id="un" placeholder="email or phone number"> <br><br>
+            Password : <input type="password" id="pw" placeholder="password"> <br><br>
 
             <input type="submit" id="lgb" value="Log In"> <br><br>
 
@@ -85,9 +82,9 @@
             else
             {
                 alert("Redirecting...");
-                return true;
             }
         }
     </script>
 </body>
 </html>
+ 
